@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.pokedex{
+    height: 80vh;
+    position: relative;
+}
+
+.teste{
+    position: absolute;
+    height: 20%;
+    top: 32vh;
+    z-index: 99;
+}
+
+@media (max-width: 768px){
+    .container > .pokedex{
+        display: flex;
+        flex-shrink: 1;
+        height: 70vh;
+    }
+    .teste{
+        height: 18%;
+        top: 34vh;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        padding: 10%;
+        width: 100%;
+    }
+    .container > .pokedex{
+        height: 50vh;
+    }
+    .teste{
+        height: 14%;
+        top: 37vh;
+    }
+}
