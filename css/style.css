@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ html{
     background: linear-gradient(to bottom, #6ab7f5, #fff);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Oxanium', cursive;
 }
 
 .container{
@@ -16,6 +19,48 @@ html{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    flex-direction: column;
+}
+
+.pokemon__data{
+    position: absolute;
+    z-index: 99;
+    top: 54vh;
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 28px);
+    left: 45vw;
+    color: #aaa;
+}
+
+.pokemon__name{
+    text-transform: capitalize;
+    color: #3a444d;
+}
+
+.form{
+    position: absolute;
+    width: 20vw;
+    min-width: 300px;
+    top: 64%;
+    left: 38.9%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__search{
+    width: 100%;
+    max-height: 50px;
+    max-width: 300px;
+    padding: 2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(16px, 1vw, 20px);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
 .pokedex{
@@ -30,28 +75,30 @@ html{
     z-index: 99;
 }
 
-@media (max-width: 768px){
-    .container > .pokedex{
-        display: flex;
-        flex-shrink: 1;
-        height: 70vh;
-    }
-    .teste{
-        height: 18%;
-        top: 34vh;
-    }
+.buttons{
+    position: absolute;
+    bottom: 15%;
+    left: 39%;
+    z-index: 99;
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
 }
 
-@media(max-width:400px){
-    .container{
-        padding: 10%;
-        width: 100%;
-    }
-    .container > .pokedex{
-        height: 50vh;
-    }
-    .teste{
-        height: 14%;
-        top: 37vh;
-    }
+.button{
+    padding: 2%;
+    margin: 1%;
+    flex-grow: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: clamp(16px, 1vw, 20px);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow:  -2px 3px 0 #222, 4px 6px 0 #000;
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
