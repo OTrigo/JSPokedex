@@ -31,7 +31,7 @@ const renderPokemon = async (pokemon)=>{
     }
     else{
         pokemonName.innerHTML = 'Not Found'
-        pokemonNumber.innerHTML = 'Missigno'
+        pokemonNumber.innerHTML = '0'
         pokeImage.src = '#'
     }
 }
