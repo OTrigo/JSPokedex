@@ -28,7 +28,7 @@ html{
     top: 54vh;
     font-weight: 600;
     font-size: clamp(16px, 2vw, 28px);
-    left: 45vw;
+    left: 42vw;
     color: #aaa;
 }
 
@@ -101,4 +101,23 @@ html{
 .button:active{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
+}
+
+@media(max-width:767px){
+   .pokedex{
+    width: 90%;
+    min-height: fit-content;
+   }
+   .form{
+    width: 50vw;
+    left: 25%;
+   }
+   .input__search{
+    width: 100%;
+   }
+
+   .buttons{
+    width: 50vw;
+    left: 25%;
+   }
 }
