@@ -41,7 +41,7 @@ html{
     position: absolute;
     width: 20vw;
     min-width: 100px;
-    top: 64%;
+    top: 65%;
     left: 38.9%;
     z-index: 99;
     display: flex;
@@ -119,5 +119,10 @@ html{
    .buttons{
     width: 50vw;
     left: 25%;
+   }
+
+   .pokeImage{
+    height: 15%;
+    top: 35vh;
    }
 }
